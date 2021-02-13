@@ -30,12 +30,7 @@ class Main:
                 temp_mass.append(round((self.main_mass[i][j] - self.x0_mass[j]) / self.dx_mass[j], 2))
             self.second_mass.append(temp_mass)
 
-    def y_d0_x0(self):
-        self.dx_mass, self.x0_mass, self.y_mass, self.mass, self.average_y, self.new_mass,self.y_x0 = [], [], [], ["Num", "X1",
-                                                                                                         "X2", "X3",
-                                                                                                         "Y", "Xn1",
-                                                                                                         "Xn2",
-                                                                                                         "Xn3"], 0, [],self.a0
+
         for i in range(self.row):
             self.y_mass.append(
                 self.a0 + self.main_mass[i][0] * self.a1 + self.main_mass[i][1] * self.a2 + self.main_mass[i][
